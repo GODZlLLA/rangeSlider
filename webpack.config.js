@@ -13,7 +13,7 @@ const zlib = require('zlib');
 /** @type {import('webpack').Configuration} */
 const config = {
   entry: {
-    'common/js/bundle': './src/index.ts',
+    'common/js/bundle': './src/index.tsx',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
