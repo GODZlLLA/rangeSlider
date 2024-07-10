@@ -1,0 +1,54 @@
+.el-range-slider {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+
+  input[type="range"] {
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    top: -150%;
+    z-index: 99;
+    margin: 0;
+
+    &::-webkit-slider-thumb {
+      pointer-events: all;
+      width: 20px;
+      height: 20px;
+      background: #007bff;
+      border-radius: 50%;
+      cursor: pointer;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    &::-moz-range-thumb {
+      pointer-events: all;
+      width: 20px;
+      height: 20px;
+      background: #007bff;
+      border-radius: 50%;
+      cursor: pointer;
+      -moz-appearance: none;
+      appearance: none;
+    }
+  }
+
+  .slider {
+    position: relative;
+    height: 5px;
+    background: #ddd;
+    margin-top: 15px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .slider__range {
+    position: absolute;
+    height: 100%;
+    background: #000;
+  }
+}
